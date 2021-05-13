@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 500px;
+    background-image: url(images/background.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+header > div{
+    position: relative;
+    top: 40px;
+    color: white;
+}
+
+.menu{
+    border : 1px solid white;
+    color: white;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    margin-right: 20px;
+}
+
+.carousel-control-next{
+    filter: invert(100%);
+}
+.carousel-control-prev{
+    filter: invert(100%);
+}
+.carousel-inner{
+    display: flex;
+    margin-left: 20%;
+}
+.carousel{
+    width: 25vw;
+}
+#reservation{
+    position: relative;
+    top: 300px;
+}
+.reservgrey{
+    background-color: rgba(175, 175, 174, 0.623);
+}
+
+#date-part > div{
+    height: 40px;
+    padding: 0;
+}
+#btn-validate{
+    background-color: rgba(91,160,82,0.75);
+    padding: 0;
+}
+#btn-validate input[type=submit]{
+    height: 100%;
+    background:rgba(39, 174, 96, 0.8);
+    border:0;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+#vehicules_to_be_loaded{
+    display: none;
+}
+input[type="date"] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: grey;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+
+button{
+    width: fit-content;
+    background:#53ad53;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 0.4em;
+}
+
+footer ul{
+    list-style: none;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+footer #agency{
+    background: no-repeat url('images/agence.jpg');
+    height: 100px;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #filters{
+        margin-top: 50px;
+    }
+
+    #btn-validate{
+        height: 40px;
+    }
+
+    #date-part{
+        padding-left: 0;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    #reservation{
+        padding: 0!important;
+        margin: 15px;
+    }
+    #date-part{
+        justify-content: space-around;
+    }
+    #date-part > div{
+        max-width: 32%;
+    }
+}
+
+@media (max-width: 500px){
+    #date-part > div{
+        max-width: 98%;
+    }
+
+    #reservation{
+        top: 200px;
+    }
+
+    .middle {
+        margin: 5px 0;
+    }
+}
